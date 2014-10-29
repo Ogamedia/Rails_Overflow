@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141029180612) do
-=======
-ActiveRecord::Schema.define(version: 20141029121230) do
->>>>>>> c4903fe6fd1c91b8ea40615eaaa03973e9920859
 
   create_table "problems", force: true do |t|
     t.text     "title"
@@ -25,7 +21,6 @@ ActiveRecord::Schema.define(version: 20141029121230) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "solutions", force: true do |t|
     t.text     "text"
     t.string   "screenshot"
@@ -37,6 +32,4 @@ ActiveRecord::Schema.define(version: 20141029121230) do
 
   add_index "solutions", ["problem_id"], name: "index_solutions_on_problem_id"
 
-=======
->>>>>>> c4903fe6fd1c91b8ea40615eaaa03973e9920859
 end
