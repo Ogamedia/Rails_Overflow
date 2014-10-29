@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyText
+  screenshot: MyString
+  upvote: 1
+  problem_id: 
+
+two:
+  text: MyText
+  screenshot: MyString
+  upvote: 1
+  problem_id: 
