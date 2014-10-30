@@ -1,4 +1,4 @@
 class Solution < ActiveRecord::Base
-  validates :solution, presence: true
+  validates :text, presence: true,length: { minimum: 10 }
   belongs_to :problem
 end
