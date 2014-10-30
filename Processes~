@@ -1,0 +1,2 @@
+creating the solution model
+==>> rails g model solution text:text screenshot:string upvote:integer
