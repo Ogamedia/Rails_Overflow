@@ -180,6 +180,7 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[36mProblem Load (0.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
   [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
   [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" ASC LIMIT 1[0m
+<<<<<<< HEAD
   [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  rollback transaction
@@ -210,3 +211,15 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[36mProblem Load (2.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
   [1m[35m (0.3ms)[0m  begin transaction
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+=======
+>>>>>>> 97670c5d0f0def3508a43fd509361a13ea732344
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
