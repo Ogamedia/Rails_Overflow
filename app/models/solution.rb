@@ -1,4 +1,4 @@
 class Solution < ActiveRecord::Base
-  validates :solution, presence: true
+  validates :text, :problem_id, presence: true
   belongs_to :problem
 end
