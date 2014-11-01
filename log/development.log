@@ -139,7 +139,11 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
             WHERE name='index_solutions_on_problem_id' AND type='index'
 
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+<<<<<<< HEAD
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+=======
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
@@ -148,6 +152,7 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
             FROM sqlite_temp_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[36mProblem Load (0.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-29 19:26:44.272941"], ["text", "so so and so"], ["title", "I can't do this"], ["updated_at", "2014-10-29 19:26:44.272941"]]
@@ -179,6 +184,27 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+=======
+  [1m[36mProblem Load (1.4ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (33.9ms)[0m  [1mINSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 13:33:41.987809"], ["text", "I tried but it still doesn't work"], ["title", "rails is not working after installation"], ["updated_at", "2014-10-30 13:33:41.987809"]]
+  [1m[35m (150.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 13:47:42.653674"], ["text", "sadfads;flkj;wiejr"], ["title", "asdfa"], ["updated_at", "2014-10-30 13:47:42.653674"]]
+  [1m[36m (124.1ms)[0m  [1mcommit transaction[0m
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
@@ -189,6 +215,7 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
             FROM sqlite_temp_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "solutions" ("created_at", "problem_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 13:50:25.768678"], ["problem_id", 2], ["text", "Hello"], ["updated_at", "2014-10-30 13:50:25.768678"]]
   [1m[36m (403.0ms)[0m  [1mcommit transaction[0m
@@ -207,6 +234,46 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[35m (0.1ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+=======
+  [1m[36mProblem Load (0.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" ASC LIMIT 1[0m
+<<<<<<< HEAD
+  [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?[0m  [["problem_id", 1]]
+  [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 14:12:40.574254"], ["text", "this it the body"], ["title", "this is the title"], ["updated_at", "2014-10-30 14:12:40.574254"]]
+  [1m[36m (172.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "solutions" ("created_at", "problem_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 14:15:36.785051"], ["problem_id", 3], ["text", "sadfasd"], ["updated_at", "2014-10-30 14:15:36.785051"]]
+  [1m[35m (155.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mSolution Load (0.5ms)[0m  [1mSELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?[0m  [["problem_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 14:21:19.079301"], ["text", "the body"], ["title", "this"], ["updated_at", "2014-10-30 14:21:19.079301"]]
+  [1m[36m (161.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "solutions" ("created_at", "problem_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 14:21:45.033580"], ["problem_id", 4], ["text", "this is the solution"], ["updated_at", "2014-10-30 14:21:45.033580"]]
+  [1m[35m (117.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mSolution Load (0.5ms)[0m  [1mSELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?[0m  [["problem_id", 4]]
+  [1m[36mProblem Load (2.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+=======
+>>>>>>> 97670c5d0f0def3508a43fd509361a13ea732344
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
