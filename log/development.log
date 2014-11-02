@@ -587,3 +587,2053 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:31:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/eit/Desktop/Rails Overflow/Rails_Overflow/app/controllers/problems_controller.rb:33: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/problems_controller.rb:33: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.2ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:31:53 +0000
+
+SyntaxError (/home/eit/Desktop/Rails Overflow/Rails_Overflow/app/controllers/problems_controller.rb:33: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/problems_controller.rb:33: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:32:02 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/_form.html.erb (1.1ms)
+  Rendered problems/new.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @problem do |f| %>
+    2:   <% if @problem.errors.any? %>
+    3:   <div id="error_explanation">
+    4:     <h2><%= pluralize(@problem.errors.count, "error") %> prohibited
+  app/views/problems/_form.html.erb:1:in `_app_views_problems__form_html_erb__2338193791951012713_11556720'
+  app/views/problems/new.html.erb:4:in `_app_views_problems_new_html_erb___3953197312358349717_10652240'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:32:19 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/_form.html.erb (1.2ms)
+  Rendered problems/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @problems do |f| %>
+    2:   <% if @problem.errors.any? %>
+    3:   <div id="error_explanation">
+    4:     <h2><%= pluralize(@problem.errors.count, "error") %> prohibited
+  app/views/problems/_form.html.erb:1:in `_app_views_problems__form_html_erb__2338193791951012713_24524540'
+  app/views/problems/new.html.erb:4:in `_app_views_problems_new_html_erb___3953197312358349717_10652240'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:37:07 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 10:37:12 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:22 +0000
+
+
+Started POST "/problems" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eOzZQ7wD8CflkE7h4XVz2o8+7vob+mki1jN9JuUppi8=", "problem"=>{"title"=>"This is a problem", "text"=>"this is a new problem i am posting "}, "commit"=>"Save Problem"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-11-02 10:40:45.432501"], ["text", "this is a new problem i am posting "], ["title", "This is a problem"], ["updated_at", "2014-11-02 10:40:45.432501"]]
+  [1m[35m (130.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/problems/5
+Completed 302 Found in 341ms (ActiveRecord: 131.1ms)
+
+
+Started GET "/problems/5" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered problems/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:40:45 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:05 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:34 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:37 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:43:41 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:43:51 +0000
+Processing by ProblemsController#list as HTML
+  Rendered problems/list.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8:  
+     9:   <% @problems.each do |problem| %>
+    10:     <tr>
+    11:       <td><%= problem.title %></td>
+    12:       <td><%= problem.text %></td>
+  app/views/problems/list.html.erb:9:in `_app_views_problems_list_html_erb__1016733886315747187_41892040'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+Processing by ProblemsController#list as HTML
+  [1m[35mProblem Load (0.4ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/list.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:44:20 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+Processing by ProblemsController#list as HTML
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/list.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 10:45:21 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+Processing by ProblemsController#list as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/list.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:02 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:00:08 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:00:10 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:00:11 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:00:12 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:01:17 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:01:19 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:01:20 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 52ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:01:20 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:01:21 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:01:22 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:02:16 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"problems"} missing required keys: [:id]):
+    1: <h1>Welcome to Rails Overflow</h1>
+    2: <h2>Stack on Rails Project</h2>
+    3: <%= link_to 'Click Here', problem_path %>
+  app/views/problems/index.html.erb:3:in `_app_views_problems_index_html_erb___4347318143841748474_8949440'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:09:36 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Picture</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_41303000'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/problem" for 127.0.0.1 at 2014-11-02 11:09:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/problem"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+Processing by ProblemsController#list as HTML
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/list.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:09:47 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:10:14 +0000
+Processing by ProblemsController#Home as HTML
+  Rendered problems/Home.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"problems"} missing required keys: [:id]):
+    1: <h1>Welcome to Rails Overflow</h1>
+    2: <h2>Stack on Rails Project</h2>
+    3: <%= link_to 'Click Here', problem_path %>
+  app/views/problems/Home.html.erb:3:in `_app_views_problems__ome_html_erb__3341055258640972808_45244720'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:10:47 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:10:49 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Picture</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_22997800'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:10:49 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Picture</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_41303000'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:11:00 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Picture</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_41303000'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:15:43 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Picture</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_41303000'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:17:05 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Screenshot</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_43197520'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.8ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:17:07 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Screenshot</th>
+     8:   </tr>
+     9:  
+    10:   <% @problem.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_43197520'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:17:17 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Screenshot</th>
+     8:   </tr>
+     9:  
+    10:   <% @problems.each do |problem| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_43265100'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:17:24 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Screenshot</th>
+     8:   </tr>
+     9:  
+    10:   <% @problems.each do |problems| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_44774660'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:18:13 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Screenshot</th>
+     8:   </tr>
+     9:  
+    10:   <% @problems.each do |problems| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_44774660'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/problem" for 127.0.0.1 at 2014-11-02 11:18:18 +0000
+
+ActionController::RoutingError (No route matches [GET] "/problem"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/problem" for 127.0.0.1 at 2014-11-02 11:18:56 +0000
+
+ActionController::RoutingError (No route matches [GET] "/problem"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:18:59 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:     <th>Screenshot</th>
+     8:   </tr>
+     9:  
+    10:   <% @problems.each do |problems| %>
+    11:     <tr>
+    12:       <td><%= problem.title %></td>
+    13:       <td><%= problem.text %></td>
+  app/views/problems/index.html.erb:10:in `_app_views_problems_index_html_erb___4347318143841748474_44774660'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:16 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:19:25 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:19:27 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:19:48 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:22:58 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/eit/Desktop/Rails Overflow/Rails_Overflow/app/views/problems/index.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+... 'Add problem' new_problem_path );@output_buffer.safe_append...
+...                               ^):
+  app/views/problems/index.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:23:00 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/eit/Desktop/Rails Overflow/Rails_Overflow/app/views/problems/index.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+... 'Add problem' new_problem_path );@output_buffer.safe_append...
+...                               ^):
+  app/views/problems/index.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:23:15 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:16 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:23:43 +0000
+
+
+Started GET "/problems/new" for 127.0.0.1 at 2014-11-02 11:23:45 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:42 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:24:53 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:25 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:27 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:25:35 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:26:10 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:27:38 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:27:38 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:27:38 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:27:39 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:27:40 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:03 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"problems"} missing required keys: [:id]):
+    19:   <% end %>
+    20: </table>
+    21: <hr>
+    22: <%= link_to 'Back to Home', problem_path%>
+  app/views/problems/index.html.erb:22:in `_app_views_problems_index_html_erb___4347318143841748474_44738960'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:22 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:24 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:27 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:34 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"problems"} missing required keys: [:id]):
+    19:   <% end %>
+    20: </table>
+    21: <hr>
+    22: <%= link_to 'Back to Home', problem_path %>
+  app/views/problems/index.html.erb:22:in `_app_views_problems_index_html_erb___4347318143841748474_43368620'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:43 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"problems"} missing required keys: [:id]):
+    19:   <% end %>
+    20: </table>
+    21: <hr>
+    22: <%= link_to 'Back to Home', problem_path %>
+  app/views/problems/index.html.erb:22:in `_app_views_problems_index_html_erb___4347318143841748474_44818300'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:29:50 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:52 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:52 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:29:53 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.4ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:33:05 +0000
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:33:27 +0000
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:10 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:11 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.7ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:13 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:54 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:55 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:34:55 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:34:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:34:56 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:57 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:58 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.4ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:58 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:34:58 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:34:59 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:00 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:02 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:03 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:04 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:05 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:08 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:35:26 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:35:27 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:29 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:35:30 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:35:31 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:35:33 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/new" for 127.0.0.1 at 2014-11-02 11:35:39 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 11:37:00 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 11:37:02 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 11:37:04 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems/new" for 127.0.0.1 at 2014-11-02 11:37:06 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2014-11-02 11:37:29 +0000
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eOzZQ7wD8CflkE7h4XVz2o8+7vob+mki1jN9JuUppi8=", "problem"=>{"title"=>"Tryial project", "text"=>"This is just a try"}, "commit"=>"Save Problem"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-11-02 11:37:29.358322"], ["text", "This is just a try"], ["title", "Tryial project"], ["updated_at", "2014-11-02 11:37:29.358322"]]
+  [1m[36m (219.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/problems/6
+Completed 302 Found in 223ms (ActiveRecord: 220.2ms)
+
+
+Started GET "/problems/6" for 127.0.0.1 at 2014-11-02 11:37:29 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProblem Load (0.2ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered problems/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `Picture' for nil:NilClass):
+     9: </p>
+    10: <p>
+    11:   <strong>Picture:</strong>
+    12:   <%= @user.Picture %>
+    13: </p>
+    14: <%= link_to 'Back', problems_path %>
+  app/views/problems/show.html.erb:12:in `_app_views_problems_show_html_erb___1461242006079161532_40773000'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2014-11-02 11:37:39 +0000
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eOzZQ7wD8CflkE7h4XVz2o8+7vob+mki1jN9JuUppi8=", "problem"=>{"title"=>"Tryial project", "text"=>"This is just a try", "Picture"=>#<ActionDispatch::Http::UploadedFile:0x000000048b9170 @tempfile=#<Tempfile:/tmp/RackMultipart20141102-10082-1yzyrme>, @original_filename="Screenshot from 2014-10-30 22:08:10.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"problem[Picture]\"; filename=\"Screenshot from 2014-10-30 22:08:10.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save Problem"}
+Unpermitted parameters: Picture
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-11-02 11:37:39.542570"], ["text", "This is just a try"], ["title", "Tryial project"], ["updated_at", "2014-11-02 11:37:39.542570"]]
+  [1m[36m (264.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/problems/7
+Completed 302 Found in 267ms (ActiveRecord: 264.5ms)
+
+
+Started GET "/problems/7" for 127.0.0.1 at 2014-11-02 11:37:39 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered problems/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `Picture' for nil:NilClass):
+     9: </p>
+    10: <p>
+    11:   <strong>Picture:</strong>
+    12:   <%= @user.Picture %>
+    13: </p>
+    14: <%= link_to 'Back', problems_path %>
+  app/views/problems/show.html.erb:12:in `_app_views_problems_show_html_erb___1461242006079161532_40773000'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
