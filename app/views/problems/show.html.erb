@@ -5,7 +5,7 @@
 
 <p>
   <strong>Text:</strong>
-  <%= @problem.text %>
+  <%= @problem.text.html_safe %>
 </p>
 <p>
   <strong>Picture:</strong>
@@ -13,8 +13,22 @@
 </p>
 <%= link_to 'Back', problems_path %>
 
+
+
+
+
+
 <h2>Solution</h2>
-<%= render @problem.solutions %>
+<% @problem.solutions.each do |comment| %>
+
+<p>
+  <strong>Solution:</strong>
+  <%= solution.text %>
+</p>
+<% end %>
+
+
+
 
 <h2>Your Solution</h2>
 <%= render "solutions/form" %>

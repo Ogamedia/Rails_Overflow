@@ -13,7 +13,7 @@
   <% @problem.each do |problem| %>
     <tr>
       <td><%= problem.title %></td>
-      <td><%= problem.text %></td>
+      <td><%= problem.text.html_safe %></td>
       <td><%= problem.screenshot %></td>
       <td><%= link_to 'Show', problem_path(problem) %></td>
     <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
