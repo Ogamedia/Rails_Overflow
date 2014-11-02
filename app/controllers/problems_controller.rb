@@ -29,9 +29,13 @@ def edit
     @problem = Problem.find(params[:id])
   end
 
-  def confirm
-    
+  def destroy
+    @problem = Problem.find(params[:id])
+    @problem.destroy
+
+    redirect_to problems_path
   end
+
   def update
     @problem = Problem.find(params[:id])
     if @problem.update(problem_params)
