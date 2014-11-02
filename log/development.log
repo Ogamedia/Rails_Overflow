@@ -140,8 +140,13 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
 
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 94ca2b42cd39da381bdafeee4ecd9725f7889f03
 =======
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
@@ -150,6 +155,39 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
             FROM sqlite_temp_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
 [0m
+<<<<<<< HEAD
+  [1m[36mProblem Load (0.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-29 19:26:44.272941"], ["text", "so so and so"], ["title", "I can't do this"], ["updated_at", "2014-10-29 19:26:44.272941"]]
+  [1m[35m (91.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-29 19:28:06.280118"], ["text", "Barney!"], ["title", "Yo!"], ["updated_at", "2014-10-29 19:28:06.280118"]]
+  [1m[36m (141.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35mProblem Load (0.5ms)[0m  SELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" DESC LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?[0m  [["problem_id", 2]]
+  [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mProblem Load (0.4ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Load (0.2ms)[0m  SELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" DESC LIMIT 1
+  [1m[36mSolution Load (0.3ms)[0m  [1mSELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?[0m  [["problem_id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mProblem Load (0.2ms)[0m  SELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" DESC LIMIT 1
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 13:40:58.739384"], ["text", "I'm having a headache"], ["title", "My rails c doesn't run"], ["updated_at", "2014-10-30 13:40:58.739384"]]
+  [1m[35m (405.8ms)[0m  commit transaction
+  [1m[36mProblem Load (0.4ms)[0m  [1mSELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" DESC LIMIT 1[0m
+  [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 3]]
+  [1m[36mSolution Load (0.4ms)[0m  [1mSELECT "solutions".* FROM "solutions"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+=======
   [1m[36mProblem Load (1.4ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
   [1m[35m (0.2ms)[0m  begin transaction
   [1m[36mSQL (33.9ms)[0m  [1mINSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 13:33:41.987809"], ["text", "I tried but it still doesn't work"], ["title", "rails is not working after installation"], ["updated_at", "2014-10-30 13:33:41.987809"]]
@@ -169,6 +207,7 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 13:47:42.653674"], ["text", "sadfads;flkj;wiejr"], ["title", "asdfa"], ["updated_at", "2014-10-30 13:47:42.653674"]]
   [1m[36m (124.1ms)[0m  [1mcommit transaction[0m
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 >>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
@@ -181,6 +220,27 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
             WHERE name='index_solutions_on_problem_id' AND type='index'
 [0m
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "solutions" ("created_at", "problem_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 13:50:25.768678"], ["problem_id", 2], ["text", "Hello"], ["updated_at", "2014-10-30 13:50:25.768678"]]
+  [1m[36m (403.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "solutions" ("created_at", "problem_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 13:51:52.967849"], ["problem_id", 3], ["text", "it's resolved"], ["updated_at", "2014-10-30 13:51:52.967849"]]
+  [1m[35m (410.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "problems" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-30 13:53:19.718476"], ["text", "hiya"], ["title", "Hey"], ["updated_at", "2014-10-30 13:53:19.718476"]]
+  [1m[36m (409.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "solutions" ("created_at", "problem_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-10-30 13:54:18.706857"], ["problem_id", 4], ["text", "Hi"], ["updated_at", "2014-10-30 13:54:18.706857"]]
+  [1m[35m (403.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 94ca2b42cd39da381bdafeee4ecd9725f7889f03
 =======
   [1m[36mProblem Load (0.9ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
   [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
@@ -220,6 +280,7 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
 >>>>>>> 97670c5d0f0def3508a43fd509361a13ea732344
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
@@ -229,3 +290,300 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
             WHERE name='index_solutions_on_problem_id' AND type='index'
 [0m
 >>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-01 22:39:49 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (8.0ms)
+Completed 200 OK in 276ms (Views: 247.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-01 22:39:50 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-01 23:05:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 15ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-01 23:26:17 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 706ms (Views: 705.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-01 23:26:18 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:05:43 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (34.1ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000004783cd8>:0x000000047829a0>):
+    1: 
+    2: <div class="field">
+    3:     <%= f.label :Title %><br>
+    4:     <%= f.text_field :title %>
+    5:   </div>
+    6:   <div class="field">
+  app/views/problems/new.html.erb:3:in `_app_views_problems_new_html_erb__85556598879046758_37488100'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:08:02 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/eit/Desktop/Rails Overflow/Rails_Overflow/app/views/problems/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/eit/Desktop/Rails Overflow/Rails_Overflow/app/views/problems/new.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/problems/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/problems/new.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:08:35 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@problem) do |f| %>
+    2:   <% if @problem.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@problem.errors.count, "error") %> prohibited this problem from being saved:</h2>
+  app/views/problems/new.html.erb:1:in `_app_views_problems_new_html_erb__85556598879046758_39880660'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:13:25 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@problem) do |f| %>
+    2:   <% if @problem.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@problem.errors.count, "error") %> prohibited this problem from being saved:</h2>
+  app/views/problems/new.html.erb:1:in `_app_views_problems_new_html_erb__85556598879046758_39880660'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (89.1ms)
+Completed 200 OK in 160ms (Views: 159.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 00:15:48 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:31:37 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 00:31:38 +0000
+
+
+Started POST "/problems/new" for 127.0.0.1 at 2014-11-02 00:33:00 +0000
+
+ActionController::RoutingError (No route matches [POST] "/problems/new"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/eit/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.6ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProblemsController#new as HTML
+  Rendered problems/_form.html.erb (0.3ms)
+  Rendered problems/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 85ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 00:43:45 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 00:43:48 +0000
+Processing by ProblemsController#index as HTML
+  Rendered problems/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 00:46:12 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/_form.html.erb (4.2ms)
+  Rendered problems/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @problem do |f| %>
+    2:   <% if @problem.errors.any? %>
+    3:   <div id="error_explanation">
+    4:     <h2><%= pluralize(@problem.errors.count, "error") %> prohibited
+  app/views/problems/_form.html.erb:1:in `_app_views_problems__form_html_erb___1620579103021515527_45996160'
+  app/views/problems/new.html.erb:4:in `_app_views_problems_new_html_erb__1575732341372758487_14889200'
+
+
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
