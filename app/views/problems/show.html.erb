@@ -13,14 +13,8 @@
 </p>
 <%= link_to 'Back', problems_path %>
 
-<h2>Solutions</h2>
-<% @problem.solutions.each do |comment| %>
-<p>
-  <strong>Solution</strong>
-</p>
+<h2>Solution</h2>
+<%= render @problem.solutions %>
 
-<p>
-  <strong>Comment:</strong>
-  <%= solution.text %>
-</p>
-<% end %>
+<h2>Your Solution</h2>
+<%= render "solutions/form" %>
