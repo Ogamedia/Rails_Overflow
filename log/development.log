@@ -5080,6 +5080,665 @@ Processing by ProblemsController#edit as HTML
 Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.1ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:21:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 688ms (Views: 678.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:21:12 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:21:16 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 104ms (Views: 47.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:21:26 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 72ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:31:39 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:31:41 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.5ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:31:44 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:31:46 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems/1/edit" for 127.0.0.1 at 2014-11-02 13:32:18 +0000
+Processing by ProblemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.2ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/edit.html.erb within layouts/application (92.6ms)
+Completed 200 OK in 173ms (Views: 170.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:32:28 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:32:30 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:32:34 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.2ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/new" for 127.0.0.1 at 2014-11-02 13:32:36 +0000
+Processing by ProblemsController#new as HTML
+  Rendered problems/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:32:41 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:51 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:34:53 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:56 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:34:57 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:35:00 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:35:02 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:35:05 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:35:05 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:35:12 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:35:13 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:35:15 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:35:22 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:35:24 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 13:35:26 +0000
+Processing by ProblemsController#index as HTML
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  Rendered problems/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:35:28 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:56 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.2ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:57 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:58 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:38:59 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:14 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+=======
 Started GET "/problems" for 127.0.0.1 at 2014-11-02 12:57:00 +0000
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ProblemsController#index as HTML
@@ -5382,10 +6041,176 @@ Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:30:28 +0000
+>>>>>>> ef3bb6060a0e9fe5812e2b4d32e1b979db98580f
 Processing by ProblemsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
   Rendered problems/show.html.erb within layouts/application (0.3ms)
+<<<<<<< HEAD
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:15 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:39:16 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:39:58 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProblem Load (0.1ms)[0m  SELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered problems/show.html.erb within layouts/application (119.4ms)
+Completed 500 Internal Server Error in 122ms
+
+SyntaxError (/home/barnabas/mest2016/MESTRails/Assignments/Rails_Overflow/app/models/solution.rb:2: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/home/barnabas/mest2016/MESTRails/Assignments/Rails_Overflow/app/models/solution.rb:4: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/home/barnabas/mest2016/MESTRails/Assignments/Rails_Overflow/app/models/solution.rb:6: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
+  ^):
+  app/models/solution.rb:2: syntax error, unexpected <<
+  app/models/solution.rb:4: syntax error, unexpected ===, expecting keyword_end
+  app/models/solution.rb:6: syntax error, unexpected >>, expecting keyword_end
+  app/views/problems/show.html.erb:17:in `_app_views_problems_show_html_erb__1699110185100239031_44644420'
+
+
+  Rendered /home/barnabas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/barnabas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/barnabas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/barnabas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
+  Rendered problems/show.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 90ms (Views: 80.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:41:58 +0000
+
+
+Started GET "/problems/1" for 127.0.0.1 at 2014-11-02 13:43:30 +0000
+Processing by ProblemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"  WHERE "problems"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSolution Load (0.1ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
+  Rendered problems/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 70ms (Views: 61.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:43:31 +0000
+=======
 Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.1ms)
 
 
@@ -5428,6 +6253,7 @@ Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2014-11-02 13:52:00 +0000
@@ -5667,3 +6493,16 @@ Started GET "/" for 127.0.0.1 at 2014-11-02 14:03:48 +0000
 Processing by ProblemsController#home as HTML
   Rendered problems/home.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+=======
+>>>>>>> ef3bb6060a0e9fe5812e2b4d32e1b979db98580f
+>>>>>>> 29f0c35abfcf79b2b129292f934f944c033d26d9
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
