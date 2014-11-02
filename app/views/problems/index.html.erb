@@ -1,15 +1,48 @@
 <%= render 'layouts/nav_bar' %>
 
-<div style="text-align">
+
+<div style="padding: 0px 0px 0px;">
+   <form class="bs-example bs-example-form" role="form">
+      <div class="row">
+         <div class="col-md-offset-7">
+            <div class="input-group">
+               <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                     Search
+                  </button>
+               </span>
+
+               <input type="text" class="form-control">
+            </div><!-- /input-group -->
+         </div><!-- /.col-lg-6 --><br>
+         <div class="col-lg-6">
+         </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+   </form>
+</div>
+
+<div style="text-align:center" style="margin-bottom:20px">
   <h1>List of Problems</h1>
 </div>
+
+
+ <div class="container col-md-7" >
+   <!-- title -->
+       <div class="col-md-4">
+         <h4> <strong>TItle</strong> </h4>
+        </div>
+    <!-- text -->
+        <div class="col-md-7" style="padding-left:10px">
+            <h4><strong>Text</strong></h4>
+        </div>
+   </div>
+
+<br>
 
 
  <%= link_to 'Add problem', new_problem_path %>
 
  <% @problem.each do |problem| %>
-
-
 
    <div class="row" style="padding:2px 2px; background-color:#ecf0f1; margin-top:1px;">
 
