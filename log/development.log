@@ -246,6 +246,11 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
   [1m[36mProblem Load (0.2ms)[0m  [1mSELECT  "problems".* FROM "problems"   ORDER BY "problems"."id" ASC LIMIT 1[0m
 <<<<<<< HEAD
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+=======
+<<<<<<< HEAD
   [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  rollback transaction
@@ -281,6 +286,30 @@ Migrating to ChangeTitleTypeInProblems (20141029190222)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
 >>>>>>> 70516d9f5a4b349bee234b28e49b6b18ee98d335
+<<<<<<< HEAD
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+=======
+>>>>>>> 94ca2b42cd39da381bdafeee4ecd9725f7889f03
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
@@ -2637,6 +2666,1061 @@ ActionView::Template::Error (undefined method `Picture' for nil:NilClass):
   Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /home/eit/.rvm/gems/ruby-2.1.1@GemsetDefault/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
+<<<<<<< HEAD
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:50:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 871ms (Views: 859.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:50:18 +0000
+
+
+Started GET "/problems" for 127.0.0.1 at 2014-11-02 12:50:19 +0000
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 79ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:29 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:54 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:51:55 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:01 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:52:02 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:53:27 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:53:28 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:03 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:04 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 12:54:55 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:00:56 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 519ms (Views: 518.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:00:57 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 105ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:13:47 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:14:54 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:15:24 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:17:48 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 109ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:24 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 105ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:18:39 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+Processing by ProblemsController#home as HTML
+  Rendered problems/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 100ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/solutions.css?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:36:39 +0000
+=======
 
 
 Started GET "/problems/new" for 127.0.0.1 at 2014-11-02 11:58:49 +0000
@@ -6254,6 +7338,29 @@ Started GET "/assets/solutions.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-02 13:31:37 +0000
 <<<<<<< HEAD
+>>>>>>> ef3bb6060a0e9fe5812e2b4d32e1b979db98580f
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+=======
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2014-11-02 13:52:00 +0000
@@ -8504,6 +9611,7 @@ Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.3ms)
   [1m[35mSolution Load (0.2ms)[0m  SELECT "solutions".* FROM "solutions"  WHERE "solutions"."problem_id" = ?  [["problem_id", 1]]
 =======
 >>>>>>> 29f0c35abfcf79b2b129292f934f944c033d26d9
+>>>>>>> fd20c64317c59a8105dedf29a9678526d4f1ef6b
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql

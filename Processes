@@ -1,2 +1,8 @@
 creating the solution model
 ==>> rails g model solution text:text screenshot:string upvote:integer
+
+
+#1. run bundle install
+
+# 2. to get the bootstrap running
+rails generate bootstrap:install static
