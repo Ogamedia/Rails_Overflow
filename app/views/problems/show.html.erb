@@ -2,7 +2,7 @@
   <strong>Title:</strong>
   <%= @problem.title %>
 </p>
- 
+
 <p>
   <strong>Text:</strong>
   <%= @problem.text %>
@@ -12,3 +12,5 @@
   <%= @problem.screenshot %>
 </p>
 <%= link_to 'Back', problems_path %>
+
+<%= picture_tag problem.image_url(:thumb) if problem.image? %>

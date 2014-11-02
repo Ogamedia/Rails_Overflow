@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "RailsOverflow" %></title>
+    <%= csrf_meta_tags %>
+
+
+  </head>
+  <!-- heading and welcome -->
+    <div class="jumbotron" style="background-color:#e74c3c">
+      <div class="container">
+        <h1 style="color:white; text-align:center">Welcome to Rails Overflow</h1>
+      </div>
+    </div>
+
+    <!-- row container links to other problems -->
+    <div class="row" >
+      <div class="container col-md-3 col-md-offset-1" style="margin-top:10%; text-align:center">
+
+         <h2>Stack on Rails Project</h2>
+
+        <div class="btn btn-default " type="button" >
+            <%= link_to 'Click Here', problems_path %>
+          </div>
+
+        </div>
+
+        <div class="container col-md-7" style="margin-top:2%; text-align:center">
+          <h1>  how to use our applcation tips</h1>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <body>
+
+  </body>
+</html>
