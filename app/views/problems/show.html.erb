@@ -5,17 +5,11 @@
 
 <p>
   <strong>Text:</strong>
-  <%= @problem.text.html_safe %>
-</p>
-<p>
-  <strong>Picture:</strong>
-  <%= @problem.screenshot %>
-</p>
+  <%= @problem.text.html_safe %><br>
+
 <%= link_to 'Back', problems_path %>
 
-<<<<<<< HEAD
-<%= picture_tag problem.image_url(:thumb) if problem.image? %>
-=======
+
 <h2>Solutions</h2>
 <% @problem.solutions.each do |comment| %>
 <p>
@@ -27,4 +21,4 @@
   <%= solution.text %>
 </p>
 <% end %>
->>>>>>> fd20c64317c59a8105dedf29a9678526d4f1ef6b
+

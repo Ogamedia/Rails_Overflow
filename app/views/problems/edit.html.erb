@@ -1,5 +1,23 @@
-<h1>Edit Problem</h1>
+<%= render 'layouts/nav_bar' %>
 
-<%= render 'form' %>
- 
-<%= link_to 'Back', problems_path %>
+<div class="container">
+
+	<!-- heading -->
+	<div class="row" style="text-align:center;">
+		<h1>Edit Problem</h1>
+	</div>
+
+	<!-- form -->
+	<div style="text-align:center;">
+		<%= render 'form' %>
+	</div>
+
+	<div style="text-align:center;">
+		<%= link_to 'Back', problems_path %>
+	</div>
+
+</div>
+
+
+
+

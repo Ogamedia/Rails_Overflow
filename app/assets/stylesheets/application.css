@@ -12,4 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ *
+ style="text-align:center; background-color:blue"
  */
+ .carrier-wave{
+ 	text-align:center;
+ 	background-color:blue;
+ }
+ #problem_Picture{
+ 	margin-left:50%;
+ 	margin-right: 24%;
+ 	background-color:green;
+ }
