@@ -1,32 +1,5 @@
 <h1>Edit Problem</h1>
-<%= form_for :problem, url: problems_path(@problem), method: :patch do |f| %>
-  <% if @problem.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@problem.errors.count, "error") %> prohibited
-      this problem from being saved:</h2>
-    <ul>
-    <% @problem.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-  <% end %>
-<p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
-  <p>
- <%= f.label :Picture %><br>
-    <%= f.file_field :Picture %>
-    </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+
+<%= render 'form' %>
  
 <%= link_to 'Back', problems_path %>
