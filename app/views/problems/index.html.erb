@@ -1,4 +1,5 @@
 <%= render 'layouts/nav_bar' %>
+
 <div style="text-align">
   <h1>List of Problems</h1>
 </div>
@@ -18,7 +19,7 @@
           <%= problem.title %>
         </div>
     <!-- text -->
-        <div class="col-md-4" style="padding-left:10px">
+        <div class="col-md-7" style="padding-left:10px">
           <%= problem.text.html_safe %>
         </div>
 
@@ -26,9 +27,9 @@
 
 
         <div class="container col-md-4" >
-            <div class="col-md-3"><%= link_to 'Show', problem_path(problem) %></div>
-            <div class="col-md-3"><%= link_to 'Edit', edit_problem_path(problem) %></div>
-            <div class="col-md-3"><%= link_to 'Destroy', problem_path(problem),
+            <div class="col-md-3 btn btn-info"=><%= link_to 'Show', problem_path(problem) %></div>
+            <div class="col-md-3 btn btn-success"><%= link_to 'Edit', edit_problem_path(problem) %></div>
+            <div class="col-md-3 btn btn-danger"><%= link_to 'Destroy', problem_path(problem),
                     method: :delete, data: { confirm: 'Are you sure?' } %></div>
         </div>
 
