@@ -11,19 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029190222) do
+ActiveRecord::Schema.define(version: 20141102172051) do
 
   create_table "problems", force: true do |t|
     t.string   "title"
     t.text     "text"
-    t.string   "screenshot"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "solutions", force: true do |t|
     t.text     "text"
-    t.string   "screenshot"
     t.integer  "upvote"
     t.integer  "problem_id"
     t.datetime "created_at"

@@ -9622,7 +9622,115 @@ Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.3ms)
             FROM sqlite_temp_master
             WHERE name='index_solutions_on_problem_id' AND type='index'
 [0m
+<<<<<<< HEAD
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveScreenshotFromProblems (20141102171451)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "aproblems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "text" text, "screenshot" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "problems"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (1, 'I can''t do this', 'so so and so', NULL, '2014-10-29 19:26:44.272941', '2014-10-29 19:26:44.272941')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (2, 'Yo!', 'Barney!', NULL, '2014-10-29 19:28:06.280118', '2014-10-29 19:28:06.280118')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (3, 'My rails c doesn''t run', 'I''m having a headache', NULL, '2014-10-30 13:40:58.739384', '2014-10-30 13:40:58.739384')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (4, 'Hey', 'hiya', NULL, '2014-10-30 13:53:19.718476', '2014-10-30 13:53:19.718476')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (5, 'This is a problem', 'this is a new problem i am posting ', NULL, '2014-11-02 10:40:45.432501', '2014-11-02 10:40:45.432501')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (6, 'Tryial project', 'This is just a try', NULL, '2014-11-02 11:37:29.358322', '2014-11-02 11:37:29.358322')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (7, 'Tryial project', 'This is just a try', NULL, '2014-11-02 11:37:39.542570', '2014-11-02 11:37:39.542570')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (8, 'new Problem', 'this is a new problem i am facing', NULL, '2014-11-02 11:59:12.785852', '2014-11-02 11:59:12.785852')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (9, 'Picture Problem', 'this is a picture problem', NULL, '2014-11-02 12:00:52.481078', '2014-11-02 12:00:52.481078')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (10, 'A new problem', 'this is supposed to contain a new problem', NULL, '2014-11-02 12:05:49.506083', '2014-11-02 12:05:49.506083')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (11, 'A new problem', 'this is supposed to contain a new problem', NULL, '2014-11-02 12:06:01.305806', '2014-11-02 12:06:01.305806')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (12, 'kennedy is facing some errors', 'this guy has been facing errors for sometime now', NULL, '2014-11-02 12:16:03.229840', '2014-11-02 12:16:03.229840')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (13, 'another problem a fixing ', 'so are u telling me that until characters are long, it wont save?', NULL, '2014-11-02 12:17:13.028763', '2014-11-02 12:17:13.028763')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (15, 'I can''t do this', 'so so and so', NULL, '2014-11-02 12:59:33.899801', '2014-11-02 12:59:33.899801')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (16, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', NULL, '2014-11-02 15:00:38.999648', '2014-11-02 15:00:38.999648')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (17, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', NULL, '2014-11-02 15:00:52.508983', '2014-11-02 15:00:52.508983')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (18, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', NULL, '2014-11-02 15:27:33.363285', '2014-11-02 15:27:33.363285')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (19, 'I can''t do this', 'so so and so', NULL, '2014-11-02 16:17:54.295754', '2014-11-02 16:17:54.295754')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (20, 'I can''t do this', 'so so and so', NULL, '2014-11-02 16:54:47.681614', '2014-11-02 16:54:47.681614')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (21, 'I can''t do this', 'so so and so', NULL, '2014-11-02 16:56:07.048244', '2014-11-02 16:56:07.048244')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "problems"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aproblems"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (1, 'I can''t do this', 'so so and so', '2014-10-29 19:26:44.272941', '2014-10-29 19:26:44.272941')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (2, 'Yo!', 'Barney!', '2014-10-29 19:28:06.280118', '2014-10-29 19:28:06.280118')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (3, 'My rails c doesn''t run', 'I''m having a headache', '2014-10-30 13:40:58.739384', '2014-10-30 13:40:58.739384')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (4, 'Hey', 'hiya', '2014-10-30 13:53:19.718476', '2014-10-30 13:53:19.718476')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (5, 'This is a problem', 'this is a new problem i am posting ', '2014-11-02 10:40:45.432501', '2014-11-02 10:40:45.432501')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (6, 'Tryial project', 'This is just a try', '2014-11-02 11:37:29.358322', '2014-11-02 11:37:29.358322')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (7, 'Tryial project', 'This is just a try', '2014-11-02 11:37:39.542570', '2014-11-02 11:37:39.542570')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (8, 'new Problem', 'this is a new problem i am facing', '2014-11-02 11:59:12.785852', '2014-11-02 11:59:12.785852')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (9, 'Picture Problem', 'this is a picture problem', '2014-11-02 12:00:52.481078', '2014-11-02 12:00:52.481078')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (10, 'A new problem', 'this is supposed to contain a new problem', '2014-11-02 12:05:49.506083', '2014-11-02 12:05:49.506083')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (11, 'A new problem', 'this is supposed to contain a new problem', '2014-11-02 12:06:01.305806', '2014-11-02 12:06:01.305806')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (12, 'kennedy is facing some errors', 'this guy has been facing errors for sometime now', '2014-11-02 12:16:03.229840', '2014-11-02 12:16:03.229840')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (13, 'another problem a fixing ', 'so are u telling me that until characters are long, it wont save?', '2014-11-02 12:17:13.028763', '2014-11-02 12:17:13.028763')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (15, 'I can''t do this', 'so so and so', '2014-11-02 12:59:33.899801', '2014-11-02 12:59:33.899801')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (16, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', '2014-11-02 15:00:38.999648', '2014-11-02 15:00:38.999648')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (17, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', '2014-11-02 15:00:52.508983', '2014-11-02 15:00:52.508983')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (18, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', '2014-11-02 15:27:33.363285', '2014-11-02 15:27:33.363285')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (19, 'I can''t do this', 'so so and so', '2014-11-02 16:17:54.295754', '2014-11-02 16:17:54.295754')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (20, 'I can''t do this', 'so so and so', '2014-11-02 16:54:47.681614', '2014-11-02 16:54:47.681614')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (21, 'I can''t do this', 'so so and so', '2014-11-02 16:56:07.048244', '2014-11-02 16:56:07.048244')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aproblems"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141102171451"]]
+  [1m[35m (113.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveScreenshotFromSolutions (20141102172051)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "asolutions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "screenshot" varchar(255), "upvote" integer, "problem_id" integer, "created_at" datetime, "updated_at" datetime, "downvote" integer) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_asolutions_on_problem_id" ON "asolutions" ("problem_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "solutions"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (1, 'Hello', NULL, NULL, 2, '2014-10-30 13:50:25.768678', '2014-10-30 13:50:25.768678', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (2, 'it''s resolved', NULL, NULL, 3, '2014-10-30 13:51:52.967849', '2014-10-30 13:51:52.967849', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (3, 'Hi', NULL, NULL, 4, '2014-10-30 13:54:18.706857', '2014-10-30 13:54:18.706857', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "solutions"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "solutions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "upvote" integer, "problem_id" integer, "created_at" datetime, "updated_at" datetime, "downvote" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asolutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asolutions_on_problem_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_solutions_on_problem_id" ON "solutions" ("problem_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "asolutions"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (1, 'Hello', NULL, 2, '2014-10-30 13:50:25.768678', '2014-10-30 13:50:25.768678', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (2, 'it''s resolved', NULL, 3, '2014-10-30 13:51:52.967849', '2014-10-30 13:51:52.967849', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (3, 'Hi', NULL, 4, '2014-10-30 13:54:18.706857', '2014-10-30 13:54:18.706857', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "asolutions"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141102172051"]]
+  [1m[36m (106.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+=======
 >>>>>>> fd20c64317c59a8105dedf29a9678526d4f1ef6b
+>>>>>>> e806a43d6869407d584e4557cb3b27503e28aa79
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
@@ -18481,3 +18589,112 @@ Processing by ProblemsController#new as HTML
   Rendered problems/_form.html.erb (2.0ms)
   Rendered problems/new.html.erb within layouts/application (3.0ms)
 Completed 200 OK in 98ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveScreenshotFromProblems (20141102171451)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "aproblems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "text" text, "screenshot" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "problems"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (1, 'I can''t do this', 'so so and so', NULL, '2014-10-29 19:26:44.272941', '2014-10-29 19:26:44.272941')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (2, 'Yo!', 'Barney!', NULL, '2014-10-29 19:28:06.280118', '2014-10-29 19:28:06.280118')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (3, 'My rails c doesn''t run', 'I''m having a headache', NULL, '2014-10-30 13:40:58.739384', '2014-10-30 13:40:58.739384')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (4, 'Hey', 'hiya', NULL, '2014-10-30 13:53:19.718476', '2014-10-30 13:53:19.718476')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (5, 'This is a problem', 'this is a new problem i am posting ', NULL, '2014-11-02 10:40:45.432501', '2014-11-02 10:40:45.432501')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (6, 'Tryial project', 'This is just a try', NULL, '2014-11-02 11:37:29.358322', '2014-11-02 11:37:29.358322')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (7, 'Tryial project', 'This is just a try', NULL, '2014-11-02 11:37:39.542570', '2014-11-02 11:37:39.542570')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (8, 'new Problem', 'this is a new problem i am facing', NULL, '2014-11-02 11:59:12.785852', '2014-11-02 11:59:12.785852')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (9, 'Picture Problem', 'this is a picture problem', NULL, '2014-11-02 12:00:52.481078', '2014-11-02 12:00:52.481078')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (10, 'A new problem', 'this is supposed to contain a new problem', NULL, '2014-11-02 12:05:49.506083', '2014-11-02 12:05:49.506083')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (11, 'A new problem', 'this is supposed to contain a new problem', NULL, '2014-11-02 12:06:01.305806', '2014-11-02 12:06:01.305806')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (12, 'kennedy is facing some errors', 'this guy has been facing errors for sometime now', NULL, '2014-11-02 12:16:03.229840', '2014-11-02 12:16:03.229840')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (13, 'another problem a fixing ', 'so are u telling me that until characters are long, it wont save?', NULL, '2014-11-02 12:17:13.028763', '2014-11-02 12:17:13.028763')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (15, 'I can''t do this', 'so so and so', NULL, '2014-11-02 12:59:33.899801', '2014-11-02 12:59:33.899801')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (16, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', NULL, '2014-11-02 15:00:38.999648', '2014-11-02 15:00:38.999648')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (17, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', NULL, '2014-11-02 15:00:52.508983', '2014-11-02 15:00:52.508983')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (18, 'Lets seedddddddddddd', 'hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii', NULL, '2014-11-02 16:50:37.351408', '2014-11-02 16:50:37.351408')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (19, 'I can''t do this', 'so so and so', NULL, '2014-11-02 17:41:32.549973', '2014-11-02 17:41:32.549973')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (20, 'I can''t do this skaldf asldkf sdaf sdlkfj ', ';asldkfjas d;flsda jflksdjf osidf osiad fosdahfsjakldfns ladso so and so', NULL, '2014-11-02 17:45:03.120327', '2014-11-02 17:45:03.120327')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (21, 'I can''t do this skaldf asldkf sdaf sdlkfj ', 'safasdfsadfso so and so', NULL, '2014-11-02 17:45:39.492948', '2014-11-02 17:45:39.492948')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproblems" ("id","title","text","screenshot","created_at","updated_at") VALUES (22, 'I can''t do this', 'so so and so', NULL, '2014-11-02 17:51:20.734926', '2014-11-02 17:51:20.734926')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "problems"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "text" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aproblems"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (1, 'I can''t do this', 'so so and so', '2014-10-29 19:26:44.272941', '2014-10-29 19:26:44.272941')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (2, 'Yo!', 'Barney!', '2014-10-29 19:28:06.280118', '2014-10-29 19:28:06.280118')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (3, 'My rails c doesn''t run', 'I''m having a headache', '2014-10-30 13:40:58.739384', '2014-10-30 13:40:58.739384')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (4, 'Hey', 'hiya', '2014-10-30 13:53:19.718476', '2014-10-30 13:53:19.718476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (5, 'This is a problem', 'this is a new problem i am posting ', '2014-11-02 10:40:45.432501', '2014-11-02 10:40:45.432501')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (6, 'Tryial project', 'This is just a try', '2014-11-02 11:37:29.358322', '2014-11-02 11:37:29.358322')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (7, 'Tryial project', 'This is just a try', '2014-11-02 11:37:39.542570', '2014-11-02 11:37:39.542570')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (8, 'new Problem', 'this is a new problem i am facing', '2014-11-02 11:59:12.785852', '2014-11-02 11:59:12.785852')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (9, 'Picture Problem', 'this is a picture problem', '2014-11-02 12:00:52.481078', '2014-11-02 12:00:52.481078')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (10, 'A new problem', 'this is supposed to contain a new problem', '2014-11-02 12:05:49.506083', '2014-11-02 12:05:49.506083')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (11, 'A new problem', 'this is supposed to contain a new problem', '2014-11-02 12:06:01.305806', '2014-11-02 12:06:01.305806')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (12, 'kennedy is facing some errors', 'this guy has been facing errors for sometime now', '2014-11-02 12:16:03.229840', '2014-11-02 12:16:03.229840')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (13, 'another problem a fixing ', 'so are u telling me that until characters are long, it wont save?', '2014-11-02 12:17:13.028763', '2014-11-02 12:17:13.028763')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (15, 'I can''t do this', 'so so and so', '2014-11-02 12:59:33.899801', '2014-11-02 12:59:33.899801')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (16, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', '2014-11-02 15:00:38.999648', '2014-11-02 15:00:38.999648')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (17, 'lkaklalkalkasHey', 'hiyaakmpdsmlcmlcma''lm''', '2014-11-02 15:00:52.508983', '2014-11-02 15:00:52.508983')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (18, 'Lets seedddddddddddd', 'hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii', '2014-11-02 16:50:37.351408', '2014-11-02 16:50:37.351408')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (19, 'I can''t do this', 'so so and so', '2014-11-02 17:41:32.549973', '2014-11-02 17:41:32.549973')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (20, 'I can''t do this skaldf asldkf sdaf sdlkfj ', ';asldkfjas d;flsda jflksdjf osidf osiad fosdahfsjakldfns ladso so and so', '2014-11-02 17:45:03.120327', '2014-11-02 17:45:03.120327')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (21, 'I can''t do this skaldf asldkf sdaf sdlkfj ', 'safasdfsadfso so and so', '2014-11-02 17:45:39.492948', '2014-11-02 17:45:39.492948')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","title","text","created_at","updated_at") VALUES (22, 'I can''t do this', 'so so and so', '2014-11-02 17:51:20.734926', '2014-11-02 17:51:20.734926')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aproblems"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141102171451"]]
+  [1m[35m (122.2ms)[0m  commit transaction
+Migrating to RemoveScreenshotFromSolutions (20141102172051)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "asolutions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "screenshot" varchar(255), "upvote" integer, "problem_id" integer, "created_at" datetime, "updated_at" datetime, "downvote" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_asolutions_on_problem_id" ON "asolutions" ("problem_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "solutions"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (1, 'Hello', NULL, NULL, 2, '2014-10-30 13:50:25.768678', '2014-10-30 13:50:25.768678', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (2, 'it''s resolved', NULL, NULL, 3, '2014-10-30 13:51:52.967849', '2014-10-30 13:51:52.967849', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (3, 'Hi', NULL, NULL, 4, '2014-10-30 13:54:18.706857', '2014-10-30 13:54:18.706857', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (4, 'cccdddd', NULL, NULL, 1, '2014-11-02 17:52:12.744893', '2014-11-02 17:52:12.744893', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (5, 'i expect this solution to show up', NULL, NULL, 1, '2014-11-02 18:29:10.172223', '2014-11-02 18:29:10.172223', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asolutions" ("id","text","screenshot","upvote","problem_id","created_at","updated_at","downvote") VALUES (6, 'Start the server
+<html>
+<b>asf</b>
+</html>', NULL, NULL, 1, '2014-11-02 19:13:38.941885', '2014-11-02 19:13:38.941885', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "solutions"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "solutions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "upvote" integer, "problem_id" integer, "created_at" datetime, "updated_at" datetime, "downvote" integer) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_asolutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_asolutions_on_problem_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_solutions_on_problem_id" ON "solutions" ("problem_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "asolutions"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (1, 'Hello', NULL, 2, '2014-10-30 13:50:25.768678', '2014-10-30 13:50:25.768678', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (2, 'it''s resolved', NULL, 3, '2014-10-30 13:51:52.967849', '2014-10-30 13:51:52.967849', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (3, 'Hi', NULL, 4, '2014-10-30 13:54:18.706857', '2014-10-30 13:54:18.706857', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (4, 'cccdddd', NULL, 1, '2014-11-02 17:52:12.744893', '2014-11-02 17:52:12.744893', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (5, 'i expect this solution to show up', NULL, 1, '2014-11-02 18:29:10.172223', '2014-11-02 18:29:10.172223', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "solutions" ("id","text","upvote","problem_id","created_at","updated_at","downvote") VALUES (6, 'Start the server
+<html>
+<b>asf</b>
+</html>', NULL, 1, '2014-11-02 19:13:38.941885', '2014-11-02 19:13:38.941885', NULL)[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "asolutions"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141102172051"]]
+  [1m[35m (126.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_solutions_on_problem_id' AND type='index'
+

@@ -1,26 +1,50 @@
-<h1>Listing of Problems</h1>
- 
+<%= render 'layouts/nav_bar' %>
+
+<div style="text-align">
+  <h1>List of Problems</h1>
+</div>
+
+
  <%= link_to 'Add problem', new_problem_path %>
-<hr>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th>Screenshot</th>
-  </tr>
-  
- 
-  <% @problem.each do |problem| %>
-    <tr>
-      <td><%= problem.title %></td>
-      <td><%= problem.text.html_safe %></td>
-      <td><%= problem.screenshot %></td>
-      <td><%= link_to 'Show', problem_path(problem) %></td>
-    <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
-    <td><%= link_to 'Destroy', problem_path(problem),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+
+ <% @problem.each do |problem| %>
+
+
+
+   <div class="row">
+
+   <div class="container col-md-7" >
+   <!-- title -->
+       <div class="col-md-4">
+          <%= problem.title %>
+        </div>
+    <!-- text -->
+        <div class="col-md-7" style="padding-left:10px">
+          <%= problem.text.html_safe %>
+        </div>
+
+   </div>
+
+
+        <div class="container col-md-4" >
+            <div class="col-md-3 btn btn-info"=><%= link_to 'Show', problem_path(problem) %></div>
+            <div class="col-md-3 btn btn-success"><%= link_to 'Edit', edit_problem_path(problem) %></div>
+            <div class="col-md-3 btn btn-danger"><%= link_to 'Destroy', problem_path(problem),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        </div>
+
+        <!-- end of row -->
+   </div>
+
+   <!-- end of container -->
+
+
   <% end %>
-</table>
-<hr>
+
+
+
+
+<br>
+
+
 <%= link_to 'Back to Home', root_path %>
