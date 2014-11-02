@@ -9,19 +9,6 @@
 
 <%= link_to 'Back', problems_path %>
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
-
-
-
-<h2>Solution</h2>
-
-<%= picture_tag problem.image_url(:thumb) if problem.image? %>
->>>>>>> e806a43d6869407d584e4557cb3b27503e28aa79
-
 <h2>Solutions</h2>
 
 <% @problem.solutions.each do |solution| %>
@@ -32,12 +19,6 @@
 </p>
 <% end %>
 
-<<<<<<< HEAD
-=======
-
-
-
-
 <h2>Your Solution</h2>
 <%= render "solutions/form" %>
->>>>>>> e806a43d6869407d584e4557cb3b27503e28aa79
+
