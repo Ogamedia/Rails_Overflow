@@ -1,12 +1,11 @@
 
-
-<p>
-  <strong>Solution:</strong>
+<p><strong>Solution:</strong>
   <%= solution.text %>
+  <%= solution.downvote %>
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+  <%= link_to 'Destroy Comment', [solution.problem, solution],
   method: :delete,
   data: { confirm: 'Are you sure?' } %>
 </p>

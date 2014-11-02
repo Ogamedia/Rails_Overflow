@@ -1,16 +1,16 @@
 <%= form_for :problem, url: problems_path do |f| %>
-  <% if @problem.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@problem.errors.count, "error") %> prohibited
-      this problem from being saved:</h2>
+<% if @problem.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@problem.errors.count, "error") %> prohibited
+    this problem from being saved:</h2>
     <ul>
-    <% @problem.errors.full_messages.each do |msg| %>
+      <% @problem.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
-    <% end %>
+      <% end %>
     </ul>
   </div>
   <% end %>
-<p>
+  <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
@@ -20,9 +20,13 @@
     <%= f.text_area :text %>
   </p>
 
-    <div >
-          <%= f.submit  %>
-        </p>
-    </div>
-<% end %>
+  <p>
+    <%= f.label :screenshot %><br>
+    <%= f.file_field :screenshot %>
+  </p>
 
+  <div >
+    <%= f.submit  %>
+  </p>
+</div>
+<% end %>
