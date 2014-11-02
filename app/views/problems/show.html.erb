@@ -13,28 +13,10 @@
 </p>
 <%= link_to 'Back', problems_path %>
 
-<<<<<<< HEAD
-
-
-
-
-
-<h2>Solution</h2>
-
-<%= picture_tag problem.image_url(:thumb) if problem.image? %>
 
 <h2>Solutions</h2>
 
-<% @problem.solutions.each do |solution| %>
-
-<p>
-  <strong>Solution:</strong>
-  <%= solution.text %>
-</p>
-<% end %>
-
-
-
+<%= render @problem.solutions %>
 
 
 <h2>Your Solution</h2>

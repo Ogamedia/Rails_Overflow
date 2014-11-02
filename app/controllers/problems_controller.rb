@@ -10,12 +10,12 @@ class ProblemsController < ApplicationController
   def create
     @problem = Problem.new(problem_params)
 
-      if @problem.save
+    if @problem.save
       redirect_to @problem
-      else
-        render 'new'
-        end
-      end
+    else
+      render 'new'
+    end
+  end
 
   def list
     @problem = Problem.all
@@ -25,7 +25,7 @@ class ProblemsController < ApplicationController
     @problem = Problem.find(params[:id])
   end
 
-def edit
+  def edit
     @problem = Problem.find(params[:id])
   end
 
@@ -42,13 +42,13 @@ def edit
       redirect_to @problem
     else
       render 'edit'
-  end
+    end
   end
 end
 
 
 
 private
-  def problem_params
-    params.require(:problem). permit(:title, :text, :screenshot)
-  end
+def problem_params
+  params.require(:problem). permit(:title, :text, :screenshot)
+end

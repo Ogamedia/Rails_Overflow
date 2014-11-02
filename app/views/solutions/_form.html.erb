@@ -1,6 +1,16 @@
 <%= form_for([@problem, @problem.solutions.build]) do |f| %>
+
+
+
+
+
 <p> 
   <%= f.text_area :text, size: "40x15"%>
+</p>
+
+<p>
+  <%= f.label :screenshot %><br>
+  <%= f.file_field :screenshot %>
 </p>
 <p>
   <%= f.submit %>

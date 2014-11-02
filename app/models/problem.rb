@@ -1,6 +1,7 @@
 class Problem < ActiveRecord::Base
-  validates :title, :text, presence: true,length: { minimum: 10 }
  has_many :solutions
+ validates :title, :text, presence: true,length: { minimum: 1}
+ 
  # accepts_nested_attributes_for :solutions
 # mount_uploader :picture, PictureUploader
 
