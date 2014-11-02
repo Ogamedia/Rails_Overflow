@@ -1,0 +1,22 @@
+<h1>Listing of Problems</h1>
+ 
+ <%= link_to 'Add problem', new_problem_path %>
+<hr>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th>Screenshot</th>
+  </tr>
+  
+ 
+  <% @problem.each do |problem| %>
+    <tr>
+      <td><%= problem.title %></td>
+      <td><%= problem.text %></td>
+      <td><%= problem.screenshot %></td>
+    </tr>
+  <% end %>
+</table>
+<hr>
+<%= link_to 'Back to Home', root_path %>
