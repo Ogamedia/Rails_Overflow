@@ -26,56 +26,25 @@
   <div class="container "><%= link_to 'Add problem', new_problem_path %></div>
 </div>
 
-
- <div class="container col-md-7" >
-   <!-- title -->
-       <div class="col-md-4">
-         <h4> <strong>Title</strong> </h4>
-        </div>
-    <!-- text -->
-        <div class="col-md-7" style="padding-left:10px">
-            <h4><strong>Text</strong></h4>
-        </div>
-   </div>
-
 <br>
-
-
-
-
+<div class="container">
  <% @problem.each do |problem| %>
+   <div class="col-md-8" style="height:40px; border-bottom:1px solid #ccc; padding:2px 2px; margin-top:3px;">
+   <div class="col-md-7" style="width:90%">
+        <strong><%= link_to problem.title, problem %></strong>
 
-   <div class="row" style="padding:2px 2px; background-color:#ecf0f1; margin-top:3px;">
+    </div>
+    <div class="col-md-1" style="width:10%"><%= button_to 'x', problem_path(problem),
+                    method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
 
-   <div class="container col-md-7" >
-   <!-- title -->
-       <div class="col-md-4">
-          <strong><%= problem.title %></strong>
-        </div>
-    <!-- text -->
-        <div class="col-md-7" style="padding-left:10px">
-          <%= problem.text.html_safe %>
-        </div>
    </div>
-
-
-        <div class="container col-md-4">
-            <div class="col-md-3 btn btn-info"=><%= link_to 'Show', problem_path(problem) %></div>
-            <div class="col-md-3 btn btn-success" style="margin-left:1px; margin-right:1px;"><%= link_to 'Edit', edit_problem_path(problem) %></div>
-            <div class="col-md-3 btn btn-danger"><%= link_to 'Destroy', problem_path(problem),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></div>
-        </div>
-        <!-- end of row -->
-   </div>
-
    <!-- end of container -->
-
-
   <% end %>
-
-
-
-
+    <div class="col-md-4" style="height:100%; border:1px solid #ccc">
+      .....
+    </div>
+</div>
 <br>
 
 <div class="container">

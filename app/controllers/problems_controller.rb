@@ -10,10 +10,14 @@ class ProblemsController < ApplicationController
   def create
     @problem = Problem.new(problem_params)
 
-    if @problem.save
-      redirect_to @problem
-    else
-      render 'new'
+    respond_to do |format|
+      if @problem.save
+        format.html { redirect_to problems_path, notice: 'Problem was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @problem }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @problem.errors, status: unprocessable_entity }
+      end
     end
   end
 
