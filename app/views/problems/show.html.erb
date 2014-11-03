@@ -1,3 +1,5 @@
+<%= render 'layouts/nav_bar' %>
+<div class="container">
 <p>
   <strong>Title:</strong>
   <%= @problem.title %>
@@ -6,23 +8,35 @@
 <p>
   <strong>Text:</strong>
   <%= @problem.text.html_safe %><br>
+</p>
+</div>
 
-<%= link_to 'Back', problems_path %>
 
 
 
+
+<div  class="container">
 <h2>Solutions</h2>
 
 <% @problem.solutions.each do |solution| %>
-
+<div class="jumbotron" style="background-color:#ecf0f1">
 <p>
   <strong>Solution:</strong>
   <%= solution.text %>
 </p>
+</div>
 <% end %>
+</div>
 
 
-
-
+<hr>
+<div class="container" style="text-align:center">
 <h2>Your Solution</h2>
 <%= render "solutions/form" %>
+</div>
+
+<div class="container" style="text-align:center">
+<div class="btn btn-default " type="button" >
+    <%= link_to 'Back', problems_path %>
+ </div>
+ </div>
