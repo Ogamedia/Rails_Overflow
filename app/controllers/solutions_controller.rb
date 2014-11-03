@@ -13,7 +13,10 @@ class SolutionsController < ApplicationController
   end
 
   def downvote
-   
+    @problem = Problem.find(params[:problem_id])
+    @solution = Solution.find(params[:id])
+    @vote = @solution.vote
+    redirect_to problem_path(@problem)
   end
 
   private

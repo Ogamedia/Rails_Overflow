@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     resources :solutions do
       member do
         get 'upvote'
-        # get 'downvote'
+        get 'downvote'
       end
     end
   end

@@ -1,14 +1,12 @@
 <%= render 'layouts/nav_bar' %>
 <div class="container">
-<p>
-  <strong>Title:</strong>
-  <%= @problem.title %>
-</p>
-
-<p>
-  <strong>Text:</strong>
-  <%= @problem.text.html_safe %><br>
-</p>
+<table>
+<th style="border-bottom:1px solid #ccc; width:100%; font-weight: bold"><%= @problem.title %>
+</th>
+<tr>
+  <td><%= @problem.text.html_safe %><br></td>
+</tr>
+</table>
 </div>
 
 
@@ -16,15 +14,20 @@
 
 
 <div  class="container">
-<h2>Solutions</h2>
+<h3>Answers</h3>
 
 <% @problem.solutions.each do |solution| %>
 <div class="jumbotron" style="background-color:#ecf0f1">
 <p>
-  <strong>Solution:</strong>
-  <%= solution.text %>
-  <%= pluralize(solution.votes.count, "vote") %>
-  <%= button_to '+1', upvote_problem_solution_path(@problem, solution), method: :get %>
+  <strong>Answer:</strong>
+  <table>
+  <tr>
+  <td><%= solution.text.html_safe %></td>
+  <td><%= pluralize(solution.votes.count, "vote") %></td>
+  <td><%= button_to '+1', upvote_problem_solution_path(@problem, solution), method: :get %></td>
+  <td><%= button_to '-1', downvote_problem_solution_path(@problem, solution), method: :get %></td>
+  </tr>
+  </table>
 </p>
 </div>
 <% end %>
@@ -33,7 +36,7 @@
 
 <hr>
 <div class="container" style="text-align:center">
-<h2>Your Solution</h2>
+<h2>Your Answer</h2>
 <%= render "solutions/form" %>
 </div>
 
