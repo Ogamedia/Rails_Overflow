@@ -1,12 +1,6 @@
 <hr>
 <p><strong>Solution:</strong>
-<% @solutions.each do |solution| %>
-  <tr>
-  <td><%= solution.text %></td>
-  <td><%= pluralize(solution.votes.count, "vote") %></td>
-  <td><%= button_to '+1', upvote_problem_solution_path(solution), method: :post %></td>
-  </tr>
-  <% end %>
+  <%= solution.text %>
 </p>
 
 <p>

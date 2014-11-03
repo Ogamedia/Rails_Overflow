@@ -23,6 +23,8 @@
 <p>
   <strong>Solution:</strong>
   <%= solution.text %>
+  <%= pluralize(solution.votes.count, "vote") %>
+  <%= button_to '+1', upvote_problem_solution_path(@problem, solution), method: :get %>
 </p>
 </div>
 <% end %>

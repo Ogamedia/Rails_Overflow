@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   resources :problems do
     resources :solutions do
       member do
-        post 'upvote'
-        post 'downvote'
+        get 'upvote'
+        # get 'downvote'
       end
     end
   end

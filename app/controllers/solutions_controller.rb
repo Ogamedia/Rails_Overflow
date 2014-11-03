@@ -6,9 +6,14 @@ class SolutionsController < ApplicationController
   end
 
   def upvote
-    @solution = Soluton.find(params[:id])
+    @problem = Problem.find(params[:problem_id])
+    @solution = Solution.find(params[:id])
     @solution.votes.create
-    redirect_to(solutions_path)
+    redirect_to problem_path(@problem)
+  end
+
+  def downvote
+   
   end
 
   private
