@@ -5,6 +5,17 @@ class SolutionsController < ApplicationController
     redirect_to problem_path(@problem)
   end
 
+  def upvote
+    @problem = Problem.find(params[:problem_id])
+    @solution = Solution.find(params[:id])
+    @solution.votes.create
+    redirect_to problem_path(@problem)
+  end
+
+  def downvote
+   
+  end
+
   private
   def solution_params
     params.require(:solution).permit(:text,:upvote,:downvote,:problem_id)

@@ -23,13 +23,14 @@
 
 <div style="text-align:center" style="margin-bottom:20px">
   <h1>List of Problems</h1>
+  <div class="container "><%= link_to 'Add problem', new_problem_path %></div>
 </div>
 
 
  <div class="container col-md-7" >
    <!-- title -->
        <div class="col-md-4">
-         <h4> <strong>TItle</strong> </h4>
+         <h4> <strong>Title</strong> </h4>
         </div>
     <!-- text -->
         <div class="col-md-7" style="padding-left:10px">
@@ -40,11 +41,11 @@
 <br>
 
 
- <%= link_to 'Add problem', new_problem_path %>
+
 
  <% @problem.each do |problem| %>
 
-   <div class="row" style="padding:2px 2px; background-color:#ecf0f1; margin-top:1px;">
+   <div class="row" style="padding:2px 2px; background-color:#ecf0f1; margin-top:3px;">
 
    <div class="container col-md-7" >
    <!-- title -->
@@ -77,5 +78,6 @@
 
 <br>
 
-
+<div class="container">
 <%= link_to 'Back to Home', root_path %>
+</div>
