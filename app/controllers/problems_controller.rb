@@ -1,6 +1,10 @@
 class ProblemsController < ApplicationController
   def index
     @problem = Problem.all
+    if params[:search]
+      @problem = @problem.where("title LIKE ?", "%#{params[:search]}%")
+    else
+    end
   end
 
   def new

@@ -1,24 +1,21 @@
 <%= render 'layouts/nav_bar' %>
 
 
-<div style="padding: 0px 0px 0px;">
-   <form class="bs-example bs-example-form" role="form">
-      <div class="row">
-         <div class="col-md-offset-7">
-            <div class="input-group">
-               <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">
-                     Search
-                  </button>
-               </span>
-
-               <input type="text" class="form-control">
-            </div><!-- /input-group -->
-         </div><!-- /.col-lg-6 --><br>
-         <div class="col-lg-6">
-         </div><!-- /.col-lg-6 -->
-      </div><!-- /.row -->
-   </form>
+<div style="margin: 20px 20px 0px;">
+<form class="bs-example bs-example-form" role="form">
+    <div class="row">
+      <div class="col-md-offset-9">
+        <div class="input-group">
+          <%= form_tag url: 'problems', method: :get do %>
+            <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "search"%>
+              <span class="input-group-btn">
+                  <%= submit_tag "Search", class: "btn btn-default" %>
+                <% end %>
+              </span>
+        </div>
+      </div>
+   </div>
+</form>
 </div>
 
 <div style="text-align:center" style="margin-bottom:20px">
