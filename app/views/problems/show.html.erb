@@ -1,44 +1,47 @@
 <%= render 'layouts/nav_bar' %>
 <div class="container">
-<p>
-  <strong>Title:</strong>
-  <%= @problem.title %>
-</p>
-
-<p>
-  <strong>Text:</strong>
-  <%= @problem.text.html_safe %><br>
-</p>
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="10" width="100%" style="border-bottom:1px solid #ccc; color:blue"><h3><%= @problem.title %></h3>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="10" width="100%" style="height:200px; valign:top; margin:auto; background:transparent"><%= @problem.text.html_safe %>
+			</td>
+		</tr>
+	</table>
 </div>
-
-
-
-
 
 <div  class="container">
-<h2>Solutions</h2>
-
-<% @problem.solutions.each do |solution| %>
-<div class="jumbotron" style="background-color:#ecf0f1">
-<p>
-  <strong>Solution:</strong>
-  <%= solution.text %>
-  <%= pluralize(solution.votes.count, "vote") %>
-  <%= button_to '+1', upvote_problem_solution_path(@problem, solution), method: :get %>
-</p>
-</div>
-<% end %>
+	<strong><h3>Answers</h3></strong>
+	<% @problem.solutions.each do |solution| %>
+		<div class="jumbotron" style="background-color:#ecf0f1">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td colspan="10" width="100%" style="border-bottom:1px solid #ccc; color:blue"><h3>Answer:</h3>
+					</td>
+					<td colspan="1" width="100%"><%= pluralize(solution.votes.count, "vote") %></td>
+					<td colspan="1" width="100%"><%= button_to '+1', upvote_problem_solution_path(@problem, solution), method: :get %></td>
+					<td colspan="1" width="100%"><%= button_to '-1', downvote_problem_solution_path(@problem, solution), method: :get %></td>
+				</tr>				
+				<tr>
+					<td colspan="10" width="100%" style="valign:top; margin:auto; background:transparent"><%= solution.text.html_safe %></td>
+					
+				</tr>
+			</table>
+		</div>
+	<% end %>
 </div>
 
 
 <hr>
-<div class="container" style="text-align:center">
-<h2>Your Solution</h2>
-<%= render "solutions/form" %>
+<div class="container">
+	<h2>Your Answer</h2>
+	<%= render "solutions/form" %>
 </div>
 
-<div class="container" style="text-align:center">
-<div class="btn btn-default " type="button" >
-    <%= link_to 'Back', problems_path %>
- </div>
+<div class="container">
+	<div class="btn btn-default " type="button" >
+    	<%= link_to 'Back', problems_path %>
+ 	</div>
  </div>
