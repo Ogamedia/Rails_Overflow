@@ -14,7 +14,7 @@
 
 <div  class="container">
 	<strong><h3>Answers</h3></strong>
-	<% @problem.solutions.each do |solution| %>
+	<% @problem.solutions.reverse_each do |solution| %>
 		<div class="jumbotron" style="background-color:#ecf0f1">
 			<table cellpadding="0" cellspacing="0" border="0">
 				<tr>

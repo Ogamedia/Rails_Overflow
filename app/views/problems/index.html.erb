@@ -25,7 +25,7 @@
 
 <br>
 <div class="container">
- <% @problem.each do |problem| %>
+ <% @problem.reverse_each do |problem| %>
    <div class="col-md-8" style="height:40px; border-bottom:1px solid #ccc; padding:2px 2px; margin-top:3px;">
    <div class="col-md-7" style="width:90%">
         <strong><%= link_to problem.title, problem %></strong>
